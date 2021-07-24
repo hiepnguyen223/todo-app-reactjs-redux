@@ -1,0 +1,46 @@
+.todo-app {
+    background-color: white;
+    width: 360px;
+    height: 460px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 8px;
+    position: relative;
+
+    & > form  {
+        display: flex;
+        input {
+            width: 100%;
+            margin-right: 2px;
+            padding: 4px 0px;
+        }
+
+        button{
+            font-size: 1.5rem;
+            border: none;
+            background-color: white;
+            color: #904BE8;
+            svg {
+                display: block;
+            }
+        }
+    }
+
+    .pending-task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        bottom: 8px;
+        left: 25px;
+        right: 25px;
+
+        & > button {
+            background-color: #904BE8;
+            color: white;
+            border: none;
+            padding: 8px;
+            border-radius: 4px;
+        }
+    }
+}

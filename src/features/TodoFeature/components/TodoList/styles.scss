@@ -1,0 +1,40 @@
+.todo-list {
+    height: 288px;
+    overflow: auto;
+
+    & {
+        padding-left: 0px;
+    }
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        margin-bottom: 5px;
+        list-style-type: none;
+        background-color: #F2F2F2ed;
+        border-radius: 4px;   
+    }
+
+    .completed {
+        text-decoration: line-through;
+    }
+
+    button {
+        border: none;
+        font-size: 1rem;
+        .check {
+            color: #66cd42
+        }
+        .undo {
+            color: #FFAC1C
+        }
+        .delete {
+            color: #FF0000
+        }
+        svg {
+            display: block;
+        }
+    }
+}
